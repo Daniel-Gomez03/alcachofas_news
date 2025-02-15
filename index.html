@@ -5,17 +5,136 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alcachofas News</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
 </head>
 
 <body>
     <header>
-
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand fw-bold" href="#">AlcachofasNews</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="navbar-nav ms-auto">
+                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                        <a class="nav-link" href="pages/noticias.html">Noticias</a>
+                        <a class="nav-link" href="pages/sobre.html">Sobre Nosotros</a>
+                        <a class="nav-link" href="pages/contacto.html">Contacto</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
     </header>
-    <main>
-
+    <main class="container my-4">
+        <div id="carouselNoticias" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="imgs/noticia1.png" class="d-block w-100 carousel-img" alt="Noticia 1">
+                    <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+                        <h5>Los Philadelphia Eagles aplastan a los Kansas City Chiefs 40-22 en el Super Bowl</h5>
+                        <p>En la 59ª versión de los Super Bowl, los nuevos campeones de la NFL levantaron el trofeo a
+                            través de Vince Lombardi, la segunda vez en su historia (la primera fue en 2018).</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="imgs/noticia2.png" class="d-block w-100 carousel-img" alt="Noticia 2">
+                    <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+                        <h5>Fórmula 1: Williams presenta su monoplaza para 2025</h5>
+                        <p>El equipo británico fue el primer equipo en presentar su coche de la temporada 2025.
+                            Finalizando el evento, Carlos Sainz Jr. rodó los primeros kilómetros en pista.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="imgs/noticia3.png" class="d-block w-100 carousel-img" alt="Noticia 3">
+                    <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+                        <h5>Revolucionario Nvidia RTX 50: La nueva generación de tarjetas gráficas para 2025</h5>
+                        <p>Tras dos años de espera, los entusiastas de los componentes y los gamers de todo el mundo
+                            finalmente tienen frente a ellos las nuevas Nvidia RTX 5090, RTX 5080, RTX 5070 Ti y RTX
+                            5070, que prometen revolucionar el rendimiento gráfico de las PC de 2025.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselNoticias" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselNoticias" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+        <section class="mt-5">
+            <h2 class="text-center mb-4">Últimas Noticias</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="imgs/noticia4.jpg" class="card-img-top" alt="Noticia 4">
+                        <div class="card-body">
+                            <h5 class="card-title">Precio de los combustibles este lunes 17 de febrero en Hondruas</h5>
+                            <p class="card-text">Las alzas oscilarán entre 1 y 54 centavos por galón, influenciado por
+                                las cotizaciones en el mercado internacional y por la devaluación del tipo de cambio</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="imgs/noticia5.png" class="card-img-top" alt="Noticia 5">
+                        <div class="card-body">
+                            <h5 class="card-title">Google dice haber superado un reto de cómputo cuántico con un nuevo
+                                chip</h5>
+                            <p class="card-text">Google afirmó este lunes que superó un reto clave en la computación
+                                cuántica con una nueva generación de chips, resolviendo en cinco minutos un problema de
+                                cálculo que a una computadora clásica le llevaría más tiempo que la historia del
+                                universo.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="imgs/noticia6.png" class="card-img-top" alt="Noticia 6">
+                        <div class="card-body">
+                            <h5 class="card-title">El primer museo de Nintendo ofrece un viaje nostálgico a la época de
+                                los primeros videojuegos</h5>
+                            <p class="card-text">Muchos de nosotros, los que ya tenemos cierta edad, todavía podemos
+                                recordar la primera vez que agarramos un mando del Nintendo Entertainment System y nos
+                                sumergimos rápidamente en los coloridos mundos de Super Mario, Zelda y Donkey Kong.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mt-5 text-center">
+            <h2>Suscríbete a nuestro boletín</h2>
+            <p>Recibe las últimas noticias en tu correo electrónico.</p>
+            <form class="d-flex justify-content-center">
+                <input type="email" class="form-control w-50 me-2" placeholder="Tu correo electrónico" required>
+                <button type="submit" class="btn btn-success">Suscribirse</button>
+            </form>
+        </section>
     </main>
     <footer>
-
+        <div class="container d-flex flex-column flex-lg-row justify-content-between align-items-center">
+            <p class="mb-0 text-muted">&copy; 2025 AlcachofasNews. Todos los derechos reservados.</p>
+            <div class="d-flex gap-3 mt-2 mt-lg-0">
+                <a href="https://www.facebook.com/" class="text-muted" target="_blank"><i
+                        class="bi bi-facebook fs-5"></i></a>
+                <a href="https://x.com/?lang=es" class="text-muted" target="_blank"><i
+                        class="bi bi-twitter fs-5"></i></a>
+                <a href="https://www.instagram.com/" class="text-muted" target="_blank"><i
+                        class="bi bi-instagram fs-5"></i></a>
+                <a href="https://www.youtube.com/" class="text-muted" target="_blank"><i
+                        class="bi bi-youtube fs-5"></i></a>
+            </div>
+        </div>
     </footer>
 </body>
 
