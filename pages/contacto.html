@@ -34,8 +34,41 @@
             </div>
         </nav>
     </header>
-    <main>
-
+    <main class="container my-5">
+        <section class="text-center">
+            <h1 class="fw-bold">Contáctanos</h1>
+            <p class="text-muted">¿Tienes alguna duda o sugerencia? ¡Escríbenos y te responderemos lo antes posible!</p>
+        </section>
+        <section class="row justify-content-center mt-4">
+            <div class="col-md-6">
+                <form>
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label fw-bold">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" placeholder="Tu nombre" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="apellido" class="form-label fw-bold">Apellido</label>
+                        <input type="text" class="form-control" id="apellido" placeholder="Tu apellido" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label fw-bold">Correo Electrónico</label>
+                        <input type="email" class="form-control" id="email" placeholder="tucorreo@example.com" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="mensaje" class="form-label fw-bold">Mensaje</label>
+                        <textarea class="form-control" id="mensaje" rows="4" placeholder="Escribe tu mensaje aquí"
+                            required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Enviar Mensaje</button>
+                </form>
+            </div>
+        </section>
+        <section class="text-center mt-5">
+            <h2 class="fw-bold">También puedes encontrarnos en:</h2>
+            <p><i class="bi bi-envelope-fill"></i> contacto@alcachofasnews.com</p>
+            <p><i class="bi bi-telephone-fill"></i> +123 456 7890</p>
+            <p><i class="bi bi-geo-alt-fill"></i> Calle Ficticia 123, Texas, Estados Unidos</p>
+        </section>
     </main>
     <footer>
         <div class="container d-flex flex-column flex-lg-row justify-content-between align-items-center">
